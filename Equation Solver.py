@@ -70,13 +70,13 @@ elif n == 3:
     AdjA=np.array([[c11,c12,c13],[c21,c22,c23],[c31,c32,c33]])
 #Determining Null Matrix
     Null_Matrix=np.array([[0,0,0],[0,0,0],[0,0,0]])
-#Solution if inconsistent equations
+#In case of inconsistent equations
     if np.linalg.det(A) == 0 and (AdjA == Null_Matrix).all():
         print("The given set of equations has NO SOLUTION")
-#Solution if case of consistent but infinite solution no Solution
+#In case of consistent equation but with infinite solution
     elif np.linalg.det(A) != 0 and (AdjA == Null_Matrix).all():
         print("The given set of equation has INFINITE SOLUTION")
-#Solution in case of consistent and unique solution
+#In case of consistent equation and with unique solution
     else:
         X = np.array([[x],[y],[z]])
         B = np.array([[d1],[d2],[d3]])
