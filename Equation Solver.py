@@ -1,7 +1,5 @@
 print("-----------------------------------------")
 print("Linear equation solver upto 3 variables")
-print("-----------------------------------------")
-print("Source code by Ishaan Das")
 print("*****************************************")
 import numpy as np
 x=y=z=0
